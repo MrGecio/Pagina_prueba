@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Añadir Expediente</title>
+    <title>Anadir Expediente</title>
     <link rel="stylesheet" href="pagina_prueba.css">
 </head>
+
 <body>
     <header>
-        <h1>Gestión de Expedientes de Empleados</h1>
+        <h1>Gestion de Expedientes de Empleados</h1>
     </header>
     <hr>
     <main>
         <h2>Añadir / Editar Expediente</h2>
-        <form action="#" method="post">
+
+        <form id="miFormulario" action="#" method="post">
             <div>
                 <label for="nombre"><strong>Nombre del Empleado:</strong></label>
-                <input type="text" id="nombre" name="nombre_empleado">
+                <input type="text" id="nombre" name="nombre_empleado" required>
             </div>
             <br>
             <div>
                 <label for="puesto"><strong>Puesto del Empleado:</strong></label>
-                <input type="text" id="puesto" name="puesto_empleado">
+                <input type="text" id="puesto" name="puesto_empleado" required>
             </div>
             <br>
             <div>
                 <label for="estado"><strong>Estado del Expediente:</strong></label>
-                <input type="text" id="estado" name="estado_expediente"
-                value="Pendiente">
+                <input type="text" id="estado" name="estado_expediente" value="Pendiente">
             </div>
             <br>
             <button type="submit">Guardar Expediente</button>
         </form>
+
+        <div id="mensaje" style="margin-top: 20px; font-weight: bold;"></div>
     </main>
     <hr>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="formulario.js"></script>
 </body>
+
 </html>
